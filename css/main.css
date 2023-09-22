@@ -84,6 +84,17 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }  
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -146,12 +157,6 @@ footer .social-icons{
   align-items: center;
 }
 
-footer .social-icons{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 footer .social-icons p{
   display: flex;
   justify-content: center;
@@ -182,7 +187,7 @@ aside{
   margin-bottom: 60px;
 }
 
-.features .articles{
+.features article{
   width: 63%;
   margin: 30px 0;
 }
@@ -223,6 +228,10 @@ aside{
 .contact-section{
   display: flex;
   justify-content: center;
+}
+
+.contact-section p{
+  margin:0;
 }
 
 /* ==========================================================================
@@ -330,95 +339,130 @@ aside{
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+@media screen and (min-width:768px) {
+  /*Tablet styles here*/
+.content-wrapper{
+    max-width: 640px;
+    margin: 100px 0;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  header{
+    padding: 33px 0;
   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
+  header .content-wrapper{
+    width: 100%;
+    justify-content: space-between;
   }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  header nav{
+    width: 20%;
+  }
+  header nav ul{
+    justify-content: space-between;
+  }
+
+  .header-divider{
+    display: none;
+  }
+
+  aside .content-wrapper{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .contact-wrapper .form{
+    width: 40%;
+    margin:0;
+  }
+
+  .features article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description{
+    width: 50%;
+  }
+
+
+  .reviews article{
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews article div{
+    display: 49%;
+  }
+
+  footer .content-wrapper{
+    width: 65%;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact{
+    margin-bottom: 0;
+  }
+
+  footer .copyright{
+    width: 100%;
+  }
+
+  .mission-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission-content p{
+    width: 45%;
+  }
+
+  .contact-section .contact-wrapper h2{
+    width: 80%;
+  }
+
+  .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  ====================================
+  FAQ
+  ====================================
+  */
+
+  .faq .contact-wrapper{
+    justify-content: space-between;
   }
 
-  pre {
-    white-space: pre-wrap !important;
+  .faq-content{
+    flex-basis: 45%;
   }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .faq h2{
+    width: 100%;
   }
 }
 
+@media screen and (min-width:1200px){
+  /*Desktop styles here*/
+}
