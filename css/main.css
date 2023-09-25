@@ -96,6 +96,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*General Styles */
+   html{
+    font-size: 16px
+   }
+
+   body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left; 
+   }
+
+   ul,ol{
+    list-style-type: none;
+   }
+
+   a{
+    color: #e2e3ed;
+    text-decoration: none;
+   }
+
+   h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    line-height: 43px;
+    font-weight: 500;
+   }
+
+   h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    font-weight: 500;
+   }
+
+   h3,h4{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+    font-size: 1.125em;
+    font-weight: 500;
+   }
+
+   p{
+    font-size: 0.875em;
+    line-height: 1.285em;
+   }
+
+   address{
+    font-style: normal;
+   }
+
+   .reviews h2, .faq h2{
+    line-height: 30px;
+   }
+
+ 
+
+   .faq-content h4{
+    line-height: 24px;
+   }
+
+
+
+   nav{
+    font-size: 1.125em;
+    font-weight: bold;
+   }
+
+   input{
+    font-size: 1.125;
+    font-weight: 500;
+   }
+   img{
+
+   }
+
+   figure{
+
+   }
+
 
 .content-wrapper{
   width: 90%;
@@ -346,6 +424,34 @@ aside{
    ========================================================================== */
 @media screen and (min-width:768px) {
   /*Tablet styles here*/
+h1{
+  font-size: 3em;
+  line-height: 48px;
+}
+
+h2{
+  font-size: 2.25em;
+  line-height: 48px;
+}
+
+h3{
+  font-size: 1.5em;
+  line-height:30px;
+}
+
+footer h4, .contact h4{
+  font-size: 1.5em;
+}
+
+footer p{
+  line-height: 18px;
+}
+
+.faq h4, .faq p{
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
 .content-wrapper{
     max-width: 640px;
     margin: 100px 0;
@@ -469,7 +575,31 @@ aside{
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
+  h1{
+    font-size: 3.75em;
+  }
 
+  h2{
+    font-size: 2.25em;
+  }
+
+  .faq h2, .mission h2{
+    font-size: 3em;
+  }
+
+  h3, h4{
+    font-size: 1.875em;
+  }
+
+  .faq h4{
+    font-size: 1.125em;
+    line-height: 18px;
+  }
+
+  p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
   /* General styles */
   .content-wrapper {
     width: 960px;
