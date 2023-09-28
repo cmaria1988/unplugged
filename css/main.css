@@ -231,6 +231,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #527158;
     }
 
     footer .copyright {
@@ -385,7 +389,7 @@
      FAQ Page
      ========================================================================== */
   
-     .faq {
+  .faq {
     background-color: #527158;
     display: flex;
     justify-content: center;
@@ -633,6 +637,10 @@
   
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social{
+    width:30%;
   }
 
   footer .copyright {
