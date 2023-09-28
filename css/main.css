@@ -112,7 +112,7 @@
      ol {
       list-style-type: none;
       margin: 0;
-      padding: 0;
+      padding: 20px 0 10px 0;
      }
   
      a {
@@ -175,7 +175,9 @@
 
     header figure {
       width: 60%;
-     }
+      margin: 0;
+      padding-top:15px 0 10px 0;
+    }
 
     .header-divider {
       background: #3a3a3a;
@@ -217,7 +219,8 @@
       width: 55%;
     }
 
-    footer .contact {
+    footer .contact, 
+    footer .social {
       margin-bottom: 50px;
     } 
 
@@ -273,12 +276,17 @@
     margin-top: 30px;
   }
 
+  aside p{
+    margin: 0 0 30px 0;
+  }
+
   input[type=text] {
     box-sizing: border-box;
     width: 100%;
     color: #2a423a;
     font-style: italic;
     padding: 1em;
+    margin-bottom: 20px;
   }
 
   input[type=button] {
@@ -306,7 +314,7 @@
   }
   
   .features h2 {
-    margin-bottom: 60px;
+    margin:0 0 60px 0;
   }
   
   .features article {
@@ -340,7 +348,7 @@
   }
   
   .reviews h2 {
-    margin-bottom: 40px;
+    margin-bottom: 0 0 40px 0 ;
     line-height: 1;
   }
   
@@ -593,6 +601,10 @@
   .features .features-item-description {
     width: 62%;
   }
+
+  .features i {
+    margin-bottom: 30px;
+  }
   
   /* Reviews */
   .reviews article {
@@ -617,22 +629,25 @@
   /* Footer */
   footer .content-wrapper {
     width: 65%;
+    margin: 100px 0 0 0;
   }
 
   footer .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
+    margin-bottom: 40px;
   } 
 
   footer .contact {
-    margin-bottom: 0;
+    margin: 0;
   }
 
-  footer h4 {
+  footer .contact h4,
+  footer .socialh4 {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin-bottom: 0 0 40px 0;
   }
   
   footer p {
@@ -712,6 +727,10 @@
   
   /* Header */
     header {
+      padding: 15px 0;
+    }
+
+    header .content-wrapper{
       padding: 15px 0;
     }
 
